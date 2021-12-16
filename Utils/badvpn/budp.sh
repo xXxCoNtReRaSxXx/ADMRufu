@@ -57,7 +57,7 @@ After=network.target\n
 Type=simple
 User=root
 WorkingDirectory=/root
-ExecStart=/usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 3
+ExecStart=/usr/bin/badvpn-udpgw --listen-addr 127.0.0.1:7300 --max-clients 1000 --max-connections-for-client 10
 Restart=always
 RestartSec=3s\n
 [Install]
